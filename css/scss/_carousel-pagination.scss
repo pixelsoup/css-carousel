@@ -1,0 +1,37 @@
+.paginationWrapper {
+  position: absolute;
+  bottom: 5%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+
+  @include mQueryMaxSm {
+    bottom: 9%;
+  }
+
+  @include mQueryBetweenSmMd {
+    bottom: 3%;
+  }
+}
+
+.dots {
+  display: block;
+  width: 25px;
+  height: 12px;
+  background-color: var(--color3);
+  border-radius: 10px;
+  margin: 0 5px;
+  transition: all 150ms ease-in-out;
+  cursor: pointer;
+}
+
+.overflowHidden:has(#sl1:checked)~.paginationWrapper .dot1,
+.overflowHidden:has(#sl2:checked)~.paginationWrapper .dot2,
+.overflowHidden:has(#sl3:checked)~.paginationWrapper .dot3,
+.overflowHidden:has(#sl4:checked)~.paginationWrapper .dot4,
+.overflowHidden:has(#sl5:checked)~.paginationWrapper .dot5 {
+  //box-shadow: 0px 0px 10px 3px var(--red);
+  background-color: var(--red);
+}

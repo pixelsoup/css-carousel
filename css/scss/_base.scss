@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("https://s3-ap-southeast-2.amazonaws.com/assets.i-motor.com.au/webfonts/Roboto-Regular.woff2") format("woff2");
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  scrollbar-color: transparent transparent;
+  /* thumb and track color */
+  scrollbar-width: 0px;
+}
+
+*::-webkit-scrollbar {
+  width: 0;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
+  border: none;
+}
+
+* {
+  -ms-overflow-style: none;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: var(--black);
+  background-color: var(--color2);
+  height: 100%;
+}
+
+h1 {
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+h2 {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  border-bottom: 3px var(--color3) solid;
+  border-radius: 0 0 5px 5px;
+}
+
+p {
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+ol,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.flexWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}

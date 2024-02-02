@@ -1,0 +1,23 @@
+@mixin mQueryMaxSm {
+  @media all and (max-width: 740px) {
+    @content;
+  }
+}
+
+@mixin mQueryBetweenSmMd {
+  @media all and (min-width: 480px)and (max-width: 740px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin mQueryMaxMd {
+  @media all and (min-width: 741px) and (max-width: 999px) {
+    @content;
+  }
+}
+
+@mixin mQueryMaxLg {
+  @media all and (min-width: 1000px) {
+    @content;
+  }
+}
